@@ -1,0 +1,8 @@
+"use strict";
+const n = 5;
+const inc = (number) => {
+  return number + 1;
+};
+const fn = inc(n);
+console.dir(n, fn);
+module.exports = { fn };
