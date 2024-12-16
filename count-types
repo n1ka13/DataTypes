@@ -1,0 +1,14 @@
+"use strict";
+const array = [true, "hello", 5, 12, -200, false, false, "word"];
+let type = [];
+const countTypesInArray = (arr) => {
+  const counters = {};
+  for (const element of arr) {
+    const type = typeof element;
+    const count = counters[type] + 1;
+  }
+  console.log(counters);
+};
+countTypesInArray(array);
+console.log(array);
+module.exports = { countTypesInArray };
